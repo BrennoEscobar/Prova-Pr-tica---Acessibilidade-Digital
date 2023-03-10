@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Acessibilidade Digital</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img src="https://cdn-icons-png.flaticon.com/512/5977/5977091.png" onclick="darkMode()" class="botao-fixado" />
+  <script>
+    function darkMode() {
+      let minhaImagem = document.querySelector('img');
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      let meuSrc = minhaImagem.getAttribute('src');
+      if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png') {
+        minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5977/5977128.png');
+      } else {
+        minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png');
+      }
+    }
+  </script>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Início.html">Início</a></li>
+        <li><a href="Mais sobre.html">Mais sobre</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <article>
+
+        <h2 id="A1">Pontos Fortes e Fracos da Acessibilidade Digital?</h2>
+
+        <p>A acessibilidade digital tem pontos fortes e fracos, como qualquer outra tecnologia
+          ou processo. A seguir estão alguns dos principais pontos fortes e fracos da acessibilidade digital:</p>
+
+        <h3>Pontos Fortes:</h3>
+
+        <ol>
+          <li>
+            <p>Inclusão social: A acessibilidade digital permite que todas as pessoas possam acessar
+              e utilizar as tecnologias digitais, incluindo aquelas com deficiências, idosos e pessoas
+              com baixa alfabetização. Isso promove a inclusão social, permitindo que todos possam participar
+              plenamente da sociedade e ter acesso a informações e serviços online.</p>
+          </li>
+
+          <li>
+            <p>Cumprimento de leis e regulamentos: Em muitos países, a acessibilidade digital é exigida por lei.
+              Ao cumprir essas leis e regulamentos, as empresas evitam multas e processos judiciais, além de demonstrar
+              sua responsabilidade social.</p>
+          </li>
+
+          <li>
+            <p>Melhoria da usabilidade: As tecnologias de acessibilidade, como leitores de tela
+              e teclados especiais, podem melhorar a usabilidade para todos os usuários, não apenas
+              para aqueles com deficiências. Isso pode tornar a experiência do usuário mais agradável
+              e aumentar a satisfação do cliente.</p>
+          </li>
+
+          <li>
+            <p>Vantagem competitiva: As empresas que investem em acessibilidade digital podem ter
+              uma vantagem competitiva em relação àquelas que não o fazem. Acessibilidade digital pode
+              ser um diferencial importante para atrair e reter clientes, especialmente aqueles que valorizam
+              a inclusão e a responsabilidade social.</p>
+          </li>
+
+          <li>
+            <p>Inovação tecnológica: Acessibilidade digital pode incentivar a inovação tecnológica,
+              uma vez que os desenvolvedores precisam pensar em novas maneiras de tornar as tecnologias
+              digitais acessíveis a todos.</p>
+          </li>
+        </ol>
+
+        <h3>Pontos Fracos:</h3>
+
+        <ol>
+          <li>
+            <p>Custo: Acessibilidade digital pode ser cara, especialmente para empresas que precisam adaptar
+              sites, aplicativos e outros produtos digitais para atender às necessidades de pessoas com deficiências.
+            </p>
+          </li>
+
+          <li>
+            <p>Complexidade: A acessibilidade digital pode ser complexa, especialmente para desenvolvedores
+              que não têm experiência em trabalhar com tecnologias de acessibilidade. Isso pode levar a erros e
+              problemas de usabilidade.</p>
+          </li>
+
+          <li>
+            <p>Dificuldade de implementação: A implementação da acessibilidade digital pode ser desafiadora,
+              especialmente para empresas que já possuem sites e aplicativos existentes. Às vezes, pode ser
+              necessário reconstruir completamente a tecnologia digital para torná-la acessível.</p>
+          </li>
+
+          <li>
+            <p>Falta de conscientização: Muitas empresas ainda não estão conscientes da importância da
+              acessibilidade digital, o que significa que podem não estar investindo em tornar seus produtos
+              digitais acessíveis a todas as pessoas.</p>
+          </li>
+        </ol>
+
+        <p>Em resumo, a acessibilidade digital tem muitos pontos fortes, incluindo a inclusão social,
+          o cumprimento de leis e regulamentos, a melhoria da usabilidade, a vantagem competitiva e a
+          inovação tecnológica. No entanto, existem desafios significativos, como o custo, a complexidade
+          e a dificuldade de implementação, bem como a falta de conscientização em algumas empresas.</p>
+
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>

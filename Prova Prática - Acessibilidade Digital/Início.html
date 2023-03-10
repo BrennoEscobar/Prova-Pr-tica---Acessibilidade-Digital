@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Acessibilidade Digital</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img src="https://cdn-icons-png.flaticon.com/512/5977/5977091.png" onclick="darkMode()" class="botao-fixado" />
+  <script>
+    function darkMode() {
+      let minhaImagem = document.querySelector('img');
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      let meuSrc = minhaImagem.getAttribute('src');
+      if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png') {
+        minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5977/5977128.png');
+      } else {
+        minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png');
+      }
+    }
+  </script>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Início.html">Início</a></li>
+        <li><a href="Mais sobre.html">Mais sobre</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <article>
+        <h2>Acessibilidade Digital</h2>
+
+        <style>
+          div {
+            text-align: center;
+          }
+        </style>
+
+        <div>
+          <img src="Acessibilidade_Empresas_destaque.png" class="articleimg">
+        </div>
+
+        <h3 id="A1">O que é Acessibilidade Digital?</h3>
+
+        <p>A Acessibilidade Digital é a melhoria do design da
+          usabilidade dos websites, através de técnicas e ferramentas
+          que melhorem a experiência de usuários com necessidades especiais.
+          Assim, reduz as barreiras e permite que pessoas com diferentes tipos
+          de deficiência consigam acessar sozinhas websites e informações disponíveis
+          na internet. Sem a acessibilidade, os usuários perdem autonomia e precisam
+          contar com a ajuda de terceiros para executar tarefas simples e essenciais.</p>
+
+        <br>
+
+        <div class="container">
+          <div class="div-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dyvZqfp4pr8"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+      </article>
+    </section>
+
+    <section>
+      <article>
+
+        <h3 id="A1">Qual sua importância?</h3>
+
+        <p>A acessibilidade digital é importante porque permite que todas as pessoas,
+          incluindo aquelas com deficiências, possam acessar e utilizar as tecnologias
+          digitais sem obstáculos desnecessários. A seguir estão algumas razões pelas
+          quais a acessibilidade digital é fundamental:</p>
+
+        <ul>
+          <li>
+            <p>Inclusão: A acessibilidade digital garante que todas as pessoas,
+              independentemente de suas habilidades ou limitações, possam acessar e
+              utilizar as tecnologias digitais. Isso permite que elas participem
+              plenamente da sociedade, incluindo no acesso a informações e serviços online.</p>
+          </li>
+
+          <li>
+            <p>Acessibilidade: A acessibilidade digital pode tornar as tecnologias
+              digitais mais fáceis de usar para todas as pessoas, inclusive para aquelas
+              que não têm deficiências. Por exemplo, uma fonte maior ou contraste mais
+              forte pode ajudar pessoas com visão normal que estão em um ambiente com pouca luz.</p>
+          </li>
+
+          <li>
+            <p>Legislação: Em muitos países, a acessibilidade digital é exigida por lei.
+              Isso inclui, por exemplo, a Lei Brasileira de Inclusão da Pessoa com Deficiência,
+              que exige que sites e aplicativos sejam acessíveis a pessoas com deficiência.</p>
+          </li>
+
+          <li>
+            <p>Responsabilidade social: As empresas que se preocupam com a acessibilidade
+              digital estão demonstrando seu compromisso com a inclusão social e a igualdade
+              de oportunidades para todas as pessoas. Além disso, as empresas que não consideram
+              a acessibilidade digital podem ser vistas como excludentes e perder a confiança dos
+              clientes e da sociedade.</p>
+          </li>
+
+          <li>
+            <p>Benefícios econômicos: Acessibilidade digital pode trazer benefícios econômicos,
+              incluindo maior alcance de mercado e melhores oportunidades de negócios. Por exemplo,
+              se um site for acessível a pessoas com deficiência visual, isso poderá aumentar o público
+              potencial para o site e gerar mais receita.</p>
+          </li>
+        </ul>
+
+        <p>Em resumo, a acessibilidade digital é importante porque permite que todas as pessoas possam
+          acessar e utilizar as tecnologias digitais, garantindo a inclusão e a igualdade de oportunidades.</p>
+
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>
